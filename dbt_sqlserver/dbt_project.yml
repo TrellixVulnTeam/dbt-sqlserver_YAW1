@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'dbt_sqlserver_dbt'
+name: 'dbt_mssqlserver'
 version: '1.0.0'
 config-version: 2
 
@@ -18,7 +18,6 @@ test-paths: ["tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
-asset-paths: ["assets"]
 
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
@@ -34,14 +33,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   dbt_sqlserver:
+    # Config indicated by + and applies to all files under models/example/
+    example:
       +materialized: view
-      +post-hook:
-        - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
-      dim:
-        +materialized: table
-      src:
-        +materialized: ephemeral
-
-seeds:
-  +enable: true
-  +schema: seed_full_moon_dates

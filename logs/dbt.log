@@ -1,13 +1,13 @@
 
 
-============================== 2022-08-22 08:42:02.832544 | ab4a4234-0313-4d2f-87b0-ea197cd430e9 ==============================
-08:42:02.832544 [info ] [MainThread]: Running with dbt=1.1.2
-08:42:02.833545 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\nkduy3\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
-08:42:02.833545 [debug] [MainThread]: Tracking: tracking
-08:42:02.845544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021291FA4B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021291FA62C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021291FA6110>]}
-08:42:21.858708 [debug] [MainThread]: Starter project path: D:\CMC_Project\G&M\dbt_sqlserver\dbt-sqlserver-env\lib\site-packages\dbt\include\starter_project
-08:42:26.525669 [info ] [MainThread]: No sample profile found for sqlserver.
-08:42:26.526669 [info ] [MainThread]: 
+============================== 2022-08-22 10:31:02.837449 | 72e36a40-9b74-4f9d-a101-20133e0be7b3 ==============================
+10:31:02.837449 [info ] [MainThread]: Running with dbt=1.1.2
+10:31:02.838489 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\nkduy3\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+10:31:02.838489 [debug] [MainThread]: Tracking: tracking
+10:31:02.851456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D444CE950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D444CF0A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D444CEAA0>]}
+10:31:18.204463 [debug] [MainThread]: Starter project path: D:\CMC_Project\G&M\dbt-sqlserver\dbt-env\lib\site-packages\dbt\include\starter_project
+10:31:36.491158 [info ] [MainThread]: No sample profile found for sqlserver.
+10:31:36.492194 [info ] [MainThread]: 
 Your new dbt project "dbt_sqlserver" was created!
 
 For more information on how to configure the profiles.yml file,
@@ -23,4 +23,4 @@ Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
 
 Happy modeling!
 
-08:42:26.527670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021291FA6B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021291FA6D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021291FA7070>]}
+10:31:36.493163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D444CDC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D444CDA80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D444CE500>]}
