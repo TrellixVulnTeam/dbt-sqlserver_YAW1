@@ -123,7 +123,7 @@ SQL_OJ_NOT_ORDERED: int
 SQL_OJ_INNER: int
 SQL_OJ_ALL_COMPARISON_OPS: int
 
-# other ODBC database constants
+# other ODBC 1_database constants
 SQL_SCOPE_CURROW: int
 SQL_SCOPE_TRANSACTION: int
 SQL_SCOPE_SESSION: int
@@ -321,7 +321,7 @@ class ProgrammingError(DatabaseError): ...
 class NotSupportedError(DatabaseError): ...
 
 
-# an ODBC connection to the database, for managing database transactions and creating cursors
+# an ODBC connection to the 1_database, for managing 1_database transactions and creating cursors
 # https://www.python.org/dev/peps/pep-0249/#connection-objects
 class Connection:
 
@@ -345,7 +345,7 @@ class Connection:
     def getinfo(self, infotype: int, /) -> Any: ...
     def set_attr(self, attr_id: int, value: int, /) -> None: ...
 
-    # handle non-standard database data types
+    # handle non-standard 1_database data types
     def add_output_converter(self, sqltype: int, new_converter: Callable, /) -> None: ...
     def get_output_converter(self, sqltype: int, /) -> Optional[Callable]: ...
     def remove_output_converter(self, sqltype: int, /) -> None: ...
@@ -409,7 +409,7 @@ class Cursor:
     def procedureColumns(self) -> Cursor: ...
 
 
-# a Row object represents a single database record, and behaves somewhat similar to a NamedTuple
+# a Row object represents a single 1_database record, and behaves somewhat similar to a NamedTuple
 class Row:
     cursor_description: Tuple[Tuple[str, Any, int, int, int, int, bool]]
 
